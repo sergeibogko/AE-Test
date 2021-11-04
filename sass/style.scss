@@ -82,7 +82,7 @@ body {
     line-height: 22px;
     margin-bottom: 30px;
     padding-bottom: 10px;
-    &:hover {
+    &:focus:hover {
       text-decoration: underline;
     }
   }

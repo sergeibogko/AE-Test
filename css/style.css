@@ -91,7 +91,7 @@ body {
   padding-bottom: 10px;
 }
 
-.info__item-link:hover {
+.info__item-link:focus:hover {
   text-decoration: underline;
 }
 
