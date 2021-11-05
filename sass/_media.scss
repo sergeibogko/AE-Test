@@ -40,7 +40,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .info {
     &__items {
       justify-content: center;
@@ -58,11 +58,22 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 520px) {
   .info {
     &__item {
-      width: 388px;
+      width: 315px;
       display: inline-block;
+      margin-left: 0;
+      margin-right: 0;
+      &:nth-child(2n) {
+        margin-left: 0;
+      }
+    }
+    &__item-links {
+      margin-left: 30px;
+    }
+    &__item-img {
+      max-height: 308px;
     }
     &__item-button {
       margin-bottom: 20px;
