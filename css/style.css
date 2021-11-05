@@ -1,5 +1,6 @@
 html,
 body {
+  margin: 0;
   height: 100%;
 }
 
@@ -14,7 +15,7 @@ body {
 }
 
 .header {
-  max-width: 2052px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -22,7 +23,6 @@ body {
 .header__inner {
   display: flex;
   align-items: center;
-  width: 2052px;
   height: 116px;
   margin: 0 auto;
   background: #ffffff;
@@ -31,23 +31,29 @@ body {
 }
 
 .header__logo {
-  margin-left: 87px;
+  margin-left: 25px;
 }
 
 .info__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  background: #ffffff;
 }
 
 .info__item {
   display: flex;
   justify-content: space-between;
-  max-width: 930px;
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 930px;
+  margin: 0 auto;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-bottom: 15px;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info__item:nth-child(2n) {
+  margin-left: 0;
 }
 
 .info__item-title {
@@ -78,6 +84,7 @@ body {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   padding-top: 30px;
+  padding-bottom: 10px;
   margin-bottom: 30px;
 }
 
@@ -91,7 +98,7 @@ body {
   padding-bottom: 10px;
 }
 
-.info__item-link:focus:hover {
+.info__item-link:hover {
   text-decoration: underline;
 }
 
@@ -113,8 +120,76 @@ body {
   margin-right: 23px;
 }
 
+.info__item-images {
+  margin: 0 auto;
+}
+
 .info__item-img {
   max-height: 446px;
   object-fit: cover;
+}
+
+@media (max-width: 1440px) {
+  .info__item-linki {
+    width: 250px;
+  }
+  .info__item-links {
+    width: 250px;
+  }
+  .info__item-img {
+    max-height: 356px;
+  }
+  .info__item {
+    width: 675px;
+  }
+  .info__item-btn {
+    padding: 5px 5px;
+    margin-right: 15px;
+  }
+  .info__item-iconunion {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .info__item-link {
+    margin-bottom: 7px;
+  }
+  .info__item-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+  .info__item-title--archiv {
+    margin-left: 22px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .info__item-buttonmin {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info__items {
+    justify-content: center;
+    align-items: center;
+  }
+  .info__item:nth-child(2n) {
+    margin-left: 20px;
+  }
+  .info__item-title--archiv {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 425px) {
+  .info__item {
+    width: 388px;
+    display: inline-block;
+  }
+  .info__item-button {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

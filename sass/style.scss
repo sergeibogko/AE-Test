@@ -1,5 +1,6 @@
 html,
 body {
+  margin: 0;
   height: 100%;
 }
 
@@ -13,13 +14,12 @@ body {
 }
 
 .header {
-  max-width: 2052px;
+  width: 100%;
   margin: 0;
   padding: 0;
   &__inner {
     display: flex;
     align-items: center;
-    width: 2052px;
     height: 116px;
     margin: 0 auto;
     background: #ffffff;
@@ -28,7 +28,7 @@ body {
   }
 
   &__logo {
-    margin-left: 87px;
+    margin-left: 25px;
   }
 }
 
@@ -37,15 +37,21 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background: #ffffff;
   }
   &__item {
     display: flex;
     justify-content: space-between;
-    max-width: 930px;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 930px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 15px;
+
     box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+    &:nth-child(2n) {
+      margin-left: 0;
+    }
   }
   &__item-title {
     color: #333333;
@@ -72,6 +78,7 @@ body {
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     padding-top: 30px;
+    padding-bottom: 10px;
     margin-bottom: 30px;
   }
   &__item-link {
@@ -82,7 +89,7 @@ body {
     line-height: 22px;
     margin-bottom: 30px;
     padding-bottom: 10px;
-    &:focus:hover {
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -101,8 +108,13 @@ body {
   &__item-iconunion {
     margin-right: 23px;
   }
+  &__item-images {
+    margin: 0 auto;
+  }
   &__item-img {
     max-height: 446px;
     object-fit: cover;
   }
 }
+
+@import "media";
