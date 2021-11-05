@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   .info {
     &__item {
       width: 388px;

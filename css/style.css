@@ -183,7 +183,7 @@ body {
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   .info__item {
     width: 388px;
     display: inline-block;
