@@ -1,22 +1,19 @@
 html,
 body {
-  margin: 0;
-  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 15px;
-}
-
-.container-fluid {
-  max-width: 2052px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .header {
@@ -36,7 +33,7 @@ body {
 }
 
 .header__logo {
-  margin-left: 45px;
+  margin-left: 30px;
 }
 
 .info__items {
@@ -82,7 +79,7 @@ body {
   margin-left: 60px;
 }
 
-.info__item-linki {
+.info__item-linked {
   display: flex;
   flex-direction: column;
   width: 397px;
@@ -110,6 +107,7 @@ body {
 .info__item-button {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .info__item-btn {
@@ -134,8 +132,20 @@ body {
   object-fit: cover;
 }
 
+@media (max-width: 1500px) {
+  .info__item {
+    width: 850px;
+  }
+  .info__item-img {
+    max-height: 385px;
+  }
+  .info__item-button {
+    margin-bottom: 15px;
+  }
+}
+
 @media (max-width: 1440px) {
-  .info__item-linki {
+  .info__item-linked {
     width: 250px;
   }
   .info__item-links {
@@ -145,7 +155,7 @@ body {
     max-height: 356px;
   }
   .info__item {
-    width: 675px;
+    width: 668px;
   }
   .info__item-btn {
     padding: 5px 5px;
@@ -174,6 +184,15 @@ body {
   }
   .info__item-buttonmin {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .info__item {
+    width: 100%;
+  }
+  .info__item:nth-child(2n) {
+    margin-left: 20px;
   }
 }
 
@@ -209,6 +228,15 @@ body {
   }
   .info__item-button {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .info__item {
+    width: 275px;
+  }
+  .info__item-img {
+    max-height: 230px;
   }
 }
 /*# sourceMappingURL=style.css.map */
